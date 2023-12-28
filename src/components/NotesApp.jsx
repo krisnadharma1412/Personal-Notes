@@ -14,7 +14,7 @@ class NotesApp extends React.Component {
         this.onDeleteHandler = this.onDeleteHandler.bind(this);
         this.onArchiveHandler = this.onArchiveHandler.bind(this);
         this.onAddNoteHandler = this.onAddNoteHandler.bind(this);
-        // this.onSubmitSearchText = this.onSubmitSearchText.bind(this);
+        this.onSubmitSearchText = this.onSubmitSearchText.bind(this);
     }
 
     onDeleteHandler(id){

@@ -23,6 +23,7 @@ class NotesApp extends React.Component {
     }
 
     onArchiveHandler(id){
+        
     }
 
     onSubmitSearchText(event) {

@@ -1,13 +1,14 @@
 import React from 'react';
 import NotesHeader from "./NotesHeader";
 import NotesBody from './NotesBody';
-import { getInitialData } from "../utils/index";
+import { getInitialData, showFormattedDate } from "../utils/index";
 
 class NotesApp extends React.Component {
     constructor(props){
         super(props);
         this.state = {
             notes: getInitialData(),
+            showFormattedDate: showFormattedDate(),
             searchText: '',
         }
        
@@ -40,7 +41,7 @@ class NotesApp extends React.Component {
                         id: +new Date(),
                         title,
                         body,
-                        createdAt: +new Date(),
+                        createdAt:  +new Date(),
                         archived: false,
                     }
                 ]

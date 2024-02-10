@@ -41,7 +41,7 @@ class NotesApp extends React.Component {
                         id: +new Date(),
                         title,
                         body,
-                        createdAt: +new Date(),
+                        createdAt:  +new Date(),
                         archived: false,
                     }
                 ]
